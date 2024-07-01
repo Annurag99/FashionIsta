@@ -1,0 +1,30 @@
+<router-outlet></router-outlet>
+<div class="background">
+<div class="wrap cf">
+    <div class="heading cf">
+        <h1>My Shopping Bag</h1>
+        <a routerLink='/products'class="buttonc">Continue Shopping</a>
+    </div>
+  
+    <div class="cart">
+    <ul class="cartWrap">
+        <app-eachcards *ngFor="let row of rows" [records]="row" [view]=true></app-eachcards>
+    </ul>
+    </div>
+  <div class="subtotal cf">
+    <ul ><div class="headingo">
+            <h2>Order Summary</h2>
+    </div>
+        <div class="totalRow"><span class="label">Price</span><span class="value">₹35.00</span></div>
+        <div class="totalRow"><span class="label">Shipping</span><span class="value">₹5.00</span></div>
+        <div class="totalRow"><span class="label">Tax</span><span class="value">₹4.00</span></div>
+        <div class="totalRow final"><span class="label">Payable Amount</span><span class="value">₹44.00</span></div>
+        <div class="totalRowb"><a href="#" class="buttonc">Place Order</a></div>
+    </ul>
+ </div>
+</div>
+</div>
+
+
+
+

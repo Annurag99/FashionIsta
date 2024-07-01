@@ -1,0 +1,7 @@
+
+<router-outlet></router-outlet>
+<img width="100%" src="https://images.bewakoof.com/uploads/category/desktop/factory_otlet_inside_banner_desktop-1546539665.jpg">
+<span> <a routerLink='/addproduct'class="buttonc"><i class="fa fa-plus" aria-hidden="true"></i><b>New Product</b></a></span>
+<div class="allProducts">
+<app-eachcards *ngFor="let product of productRes" [productdetails]="product" [view]=false> </app-eachcards> 
+</div>

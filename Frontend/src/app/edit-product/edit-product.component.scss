@@ -1,0 +1,66 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 26em 0 0em;
+  }
+  body {
+    background-image: url("https://searchengineland.com/figz/wp-content/seloads/2014/08/shopping-bags2-ss-1920-800x450.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    width:100%
+  }
+  input
+  {
+    height: 37px;
+    margin-bottom: 17px;
+    border-left-color: #474C4F;
+    border-left-style: solid;
+    border-left-width: 10px;
+    padding-inline-start: 7px;
+    min-width: 250px;
+  }
+  .buttonc{
+    display: flex;
+    justify-content: space-between;
+    width: 6em;
+    height: 1em;
+    text-decoration: none;
+    padding: 1em 25px 2em;
+    font-size: 16px;
+    margin-right:21px;
+    background-color: #171717;
+    color: white;
+    transition: 0.25s ease;
+  }
+  
+  .buttonc:hover{
+    background-color: white;
+    color:#474C4F;
+  }
+   .buttons{
+    margin-bottom: 1em;
+    width: 61%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .sideButtons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 1%;
+    }
+    .btn-default{
+        margin-right: 1em;
+    }
+  .i{
+    height: 2em;
+  }
+  h2{
+    padding-left: 30px;
+  }
+  form{
+    margin-left: 2em;
+    margin-right: 18em;
+  }
+ 

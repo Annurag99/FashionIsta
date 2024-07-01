@@ -1,0 +1,29 @@
+<router-outlet></router-outlet>
+<div class="background">
+    <h2>Add New Products Details</h2>
+    <form  #signupForm="ngForm" (ngSubmit)="editProductDetails(signupForm, content)" ngNativeValidate>
+        <div class="form-container">
+            <label for="title">Title</label>
+            <input type="text" name="title"  ngModel required>
+
+            <label for="image">Image Url</label>
+            <input type="text" name="image"  ngModel required>
+
+            <label for="category">Category</label>
+            <input type="text" name="category"  ngModel required>
+
+            <label for="subTitle">SubTitle</label>
+            <input type="text" name="subTitle"  ngModel required>
+
+            <label for="price">Price</label>
+            <input type="number" name="price"  ngModel required>
+
+            <label for="other">Other</label>
+            <input type="text" name="other"  ngModel required>
+            <div class="Buttons">
+                <button type="submit" class="buttonc">Save</button>
+                <button routerLink="/products" type="button" class="buttonc">Back</button>
+            </div> 
+        </div>      
+    </form>  
+</div>

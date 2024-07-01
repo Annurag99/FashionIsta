@@ -1,0 +1,142 @@
+
+.mySlides
+ {
+    width:100%;
+    height:100%;
+    border-radius:6px;
+    border:1px solid #282828;
+    }
+img 
+{
+    vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position:relative;
+  animation: opac 0.8s;
+  margin: 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+h4{
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color:#414141;
+}
+p{
+    text-indent: 50px;
+    text-align:left;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color:#414141;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.blocks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.block {
+  flex: 1 1 10%;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 1rem 1rem 3rem;
+  position: relative;
+    background: #171717;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  
+    img {
+        max-width: 100%;
+    }
+  
+    h1 {
+        color: #6A6E71;
+        font: 1.6666em/1 normal 'Open Sans', helvetica, arial;
+        margin-bottom: 0;
+    }
+  
+    p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+  .block:nth-child(even) {
+      margin-right: 0;
+  }
+
+  @media screen and (min-width: 60em) {
+      flex: 1 1 10%;
+      overflow: hidden;
+
+      &:nth-child(even) {
+          margin-right: 1rem;
+      }
+
+      &:nth-child(4n) {
+          margin-right: 0;
+      }
+
+  }
+}
+
+.colla{
+  font-size: 30px;
+  color: black;
+  text-decoration-line: underline;
+  font-family: HelveticaNeue-bold;
+  cursor: default;
+  text-align: center;
+  width: 100%;
+}
+
+

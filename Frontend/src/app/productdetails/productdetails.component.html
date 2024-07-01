@@ -1,0 +1,57 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+  <div class="left-column">
+    <img src="{{productRes.image}}"/>
+  </div>
+  <div class="right-column">
+    <div class="product-description">
+      <span><h4>{{productRes.title}}</h4></span>
+      <h4>{{productRes.category}}</h4>
+      <h4>{{productRes.subtitle}}</h4>
+      <p>{{productRes.other}}</p>
+    </div>
+    <div class="product-configuration">
+      <div class="product-color">
+        <span><h4>Color</h4></span>
+        <div class="color-choose">
+          <div>
+            <input type="radio" id="red" name="color" value="red" checked>
+            <label for="red"><span></span></label>
+          </div>
+          <div>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue"><span></span></label>
+          </div>
+          <div>
+            <input type="radio" id="black" name="color" value="black">
+            <label for="black"><span></span></label>
+          </div>
+          <div>
+              <input type="radio" id="white" name="color" value="white">
+              <label for="white"><span></span></label>
+            </div>
+            <div>
+                <input type="radio" id="yellow" name="color" value="yellow">
+                <label for="yellow"><span></span></label>
+              </div>
+        </div>
+ 
+      </div>
+      <div class="cable-config">
+        <span><h4>Size</h4></span>
+        <div class="cable-choose">
+          <button>Small</button>
+          <button>Medium</button>
+          <button>Large</button>
+          <button>XLarge</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-price">
+      <span><h3>₹{{productRes.price}}</h3></span>
+      <a [routerLink]="['/orderbag']">
+      <button class="cart-btn"><i class="fa fa-shopping-cart" style="font-size:20px"></i>ADD TO BAG</button></a>
+    </div>
+  </div>
+</div>

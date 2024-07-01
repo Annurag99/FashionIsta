@@ -1,0 +1,31 @@
+<router-outlet></router-outlet>
+<div class="background">
+<h2>Update Product Details</h2>
+<form #signupForm="ngForm" (ngSubmit)="editProductDetails(signupForm, content)">
+    <div class="form-container">
+        <label for="title">Title</label>
+        <input type="text" name="title"  id="title" ngModel value="{{ productRes.title}}">
+
+        <label for="image">Image Url</label>
+        <input type="text" name="image"  id="image" ngModel value="{{ productRes.image}}">
+
+        <label for="category">Category</label>
+        <input type="text" name="category" id="category" ngModel value="{{ productRes.category}}">
+
+        <label for="subTitle">SubTitle</label>
+        <input type="text" name="subTitle" id="subTitle" ngModel value="{{ productRes.subTitle}}">
+
+        <label for="price">Price</label>
+        <input type="number" name="price"  id="price" ngModel value="{{ productRes.price}}">
+        <label for="other">Other</label>
+        <input type="text" name="other"  id="other" ngModel value="{{ productRes.other}}">
+        <div class="buttons">
+            <button routerLink="/products" type="button" class="buttonc" (click)="DeleteEntry()">Delete</button>
+            <div class="sideButtons">
+                 <button routerLink="/products" type="button" class="buttonc">Back</button>
+                 <button type="submit" class="buttonc">Update</button>
+            </div> 
+        </div> 
+    </div>      
+    </form>  
+</div>

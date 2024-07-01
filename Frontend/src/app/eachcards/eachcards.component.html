@@ -1,0 +1,45 @@
+<router-outlet></router-outlet>
+
+<div *ngIf="isView; else product">
+  <div class="infoWrap"> 
+      <div class="cartSection">
+        <img src="{{records.ProductImage}}" class="itemImg" />
+        <p class="itemNumber">{{records.Index}}</p>     
+         <div class="removeWrap cartSection">
+            <a href="#" class="remove"><i class="fa fa-trash" aria-hidden="true"></i></a>
+          </div>
+        <h4>{{records.ProductName}}</h4>
+          <p> <input type="text"  class="qty" placeholder="{{records.Quantity}}"/> x ₹ {{records.Price}}</p>
+        <p class="stockStatus">{{records.Size}}    In Stock</p>
+    
+      <div class="prodTotal cartSection">
+        <p>₹ {{records.Total}}</p>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+<ng-template #product> 
+<div class="card-wrapper">
+  <div class="card">
+    <div class="image-wrapper">
+        <a [routerLink]="['/editproduct',productdetails._id]">
+          <i class="fa fa-edit" style="font-size:36px;color:#171717;float:right"></i></a>
+        <a [routerLink]="['/productdetails',productdetails._id]">
+      <img src="{{productdetails.image}}" class="image"/>
+    </a></div>
+   
+    <div class="content-wrapper">
+      <div class="title">
+        <a [routerLink]="['/productdetails',productdetails._id]">   
+        <h4>{{productdetails.title}}</h4></a>
+        <h4>{{productdetails.category}}</h4>
+        <h3>₹{{productdetails.price}}</h3>
+      </div>
+        <button id="cart" class="buttonc"(click)=clicked($event)>
+        <i class="fa fa-shopping-cart" style="font-size:20px"></i>ADD TO BAG</button>
+    </div>
+  </div>
+</div>
+</ng-template>
